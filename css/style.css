@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/*---------------------------Aux Classes---------------------------------------------------*/
+
+.container{
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.w50 h1{
+    color: palevioletred;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+.line-text{
+    position: relative;
+    display: inline-block;
+    color: palevioletred;
+}
+
+.line-text > div{
+    position: absolute;
+    width: 35%;
+    height: 3px;
+    top: 0;
+    left: 0;
+    background-color: palevioletred;
+}
+/*---------------------------Aux Classes---------------------------------------------------*/
+
+
+/*--------------------------------Header---------------------------------------------*/
+
+header{
+    background-color: #5e3ea1;
+    padding: 10px 0;
+}
+
+header > .container{
+    display: flex;
+}
+
+.logo{
+    width: 50%;
+}
+
+.logo a{
+    color: white;
+    font-size: 26px;
+}
+
+.menu{
+    width: 50%;
+    text-align: right;
+}
+
+.menu ul{
+    list-style: none;
+
+}
+
+.menu li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.menu li:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.menu li a{
+    color: white;
+}
+/*--------------------------------Header---------------------------------------------*/
+
+
+/*-------------------------------------Call Text------------------------------------------------*/
+
+.call-text{
+    text-align: center;
+    background-color: #523d7f;
+    padding: 20px 0;
+}
+
+.call-text i{
+    font-size: 30px;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.call-text h2, .call-text h3{
+    color: white;
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+
+.call-text b{
+    color: palevioletred;
+    cursor: pointer;
+}
+/*-------------------------------------Call Text------------------------------------------------*/
+
+
+/*-------------------------------Galery--------------------------------------------------------*/
+
+section.galery > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-wrapper{
+    width: 33.3%;
+    padding: 30px;
+}
+
+.box-single{
+    height: 100%;
+    border: 1px solid grey;
+}
+
+.box-single img{
+    width: 100%;
+}
+
+.box-single h2{
+    text-align: center;
+    padding: 0 8px;
+}
+
+.box-single p{
+    padding: 8px;
+    color: rgb(10, 10, 10);
+}
+
+.box-wrapper a{
+    color: white;
+    text-decoration: none;
+    background: #5fb382;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 8px;
+}
+
+.box-wrapper a:hover{
+    background: #159149;
+    transition: 0.5s;
+}
+/*-------------------------------Galery--------------------------------------------------------*/
+
+/*--------------------------------News---------------------------------------------------------*/
+
+.box-single-news{
+    padding: 15px 0;
+}
+
+
+.box-single-news p{
+    color: rgb(110, 110, 110);
+    margin-bottom: 10px;
+    border-bottom: 1px dotted rgb(110, 110, 110);
+}
+
+.box-single-news li{
+    list-style-position: inside;
+    padding: 10px 0;
+    border-bottom: 1px dotted rgb(110, 110, 110);
+    color: rgb(110, 110, 110);
+
+}
+
+/*--------------------------------News---------------------------------------------------------*/
+
+.footer1{
+    background: #523d7f;
+    padding: 10px 0;
+    color: white;
+}
+
+.footer1 p{
+    padding: 10px 0;
+}
+
+.footer2{
+    background: #2e214c;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.footer2 h2{
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.w50-footer{
+    float: left;
+    width: 50%;
+}
+
+/*-----------------------Media Screen------------------------------------------------------*/
+
+@media screen and (max-width: 768px){
+    .box-wrapper{
+        width: 100%;
+        margin: 30px auto;
+        max-width: 500px;
+    }
+
+    .w50{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .w50-footer{
+        width: 50%;
+    }
+
+    .logo{
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu{
+        display: none;
+    }
+}
+
+/*-----------------------Media Screen------------------------------------------------------*/
